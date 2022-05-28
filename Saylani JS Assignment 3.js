@@ -381,22 +381,28 @@ the type of that variable is a "number", "string", "boolean" or
 
 // CODE: 16
 
-var value = "Mukarram";
-if(value == "True" || value == "False")
-{
-  alert("Boolen type variable.");
-}
-if(isNaN(value))
-{
-  alert("String type variable.");
-}
-else{
-  alert("Number type variable.")
-}
+var value = prompt("Enter anything like any string, number, boolean etc:");
 if(value == "")
 {
   alert("Un-defined variable type.")
 }
+else
+{
+  if(value == true || value == false)
+{
+  alert("Boolen type variable.");
+}
+
+  else if(isNaN(value))
+    {
+      alert("String type variable.");
+    }
+  else
+  {
+    alert("Number type variable.");
+  }
+}
+
 
 
 
